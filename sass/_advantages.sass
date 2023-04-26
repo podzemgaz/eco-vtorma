@@ -1,0 +1,58 @@
+.advantages
+    &-banner
+        padding-left: 105px
+        background-color: #03512A
+    &-container
+        padding: 50px 105px 83px 105px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &-item
+        margin-top: 21px
+        width: 286px
+        &:first-child
+            margin-left: 0
+        &__logo
+            width: 32px
+            height: 75px
+        &__text
+            margin-top: 10px
+            font-size: 16px
+            line-height: 23px
+            color: $main-color_green
+
+@media (max-width: 1069px)
+    .advantages
+        &-item
+            width: 29%
+
+@media (max-width: 991px)
+    .advantages
+        &-banner
+            padding-left: 70px
+        &-container
+            padding: 30px 70px 43px 70px
+        &-item
+            width: 46%
+
+@media (max-width: 575px)
+    .advantages
+        &-banner
+            padding-left: 30px
+        &-container
+            padding: 25px 30px 38px 30px
+        &-item
+            width: 100%
+            display: flex
+            align-items: flex-end
+            &__text
+                margin-left: 30px
+                font-size: 16px
+                line-height: 23px
+
+@media (max-width: 419px)
+    .advantages
+        &-item
+            &__text
+                font-size: 14px
+                line-height: 19px

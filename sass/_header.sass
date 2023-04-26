@@ -1,0 +1,158 @@
+.header
+    height: 478px
+    padding-top: 36px
+    background: url(../img/header/background.png) center no-repeat
+    background-size: cover
+    position: relative
+    &-menu
+        margin-right: 32%
+        text-align: right
+        &__item
+            padding: 3px 12px 3px 12px
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 18px
+            font-weight: 700
+            color: $main-color_green
+            &:last-child
+                padding-right: 0
+            &:first-child
+                padding-left: 0
+    &__title
+        margin-right: 32%
+        margin-top: 34px
+        text-align: right
+        color: $main-color_green
+        text-transform: uppercase
+        span
+            display: block
+        &_regular
+            font-size: 50px
+            font-weight: 400
+        &_bold
+            font-size: 60px
+            font-weight: 700
+    &__logo
+        position: absolute
+        top: 22px
+        right: 4%
+    &-img
+        &__man
+            position: absolute
+            top: 78px
+            left: 105px
+            height: 370px
+            width: 334px
+            background: url(../img/header/man.png) center no-repeat
+            background-size: 100% auto
+        &__box
+            position: absolute
+            top: 145px
+            right: 14%
+            height: 290px
+            width: 173px
+            background: url(../img/header/box.png) center no-repeat
+            background-size: 100% auto
+
+@media (max-width: 1199px)
+    .header
+        height: 518px
+        &-menu
+            margin-right: 33%
+        &__title
+            margin-right: 33%
+        &-img
+            &__man
+                top: 118px
+            &__box
+                top: 185px
+
+@media (max-width: 991px)
+    .header
+        height: 628px
+        &-menu
+            text-align: left
+            margin-left: 70px
+        &__title
+            text-align: left
+            margin-left: 70px
+        &__logo
+            right: 70px
+        &-img
+            &__man
+                top: 228px
+                left: 70px
+            &__box
+                top: 295px
+                right: 70px
+
+@media (max-width: 767px)
+    .header
+        height: 548px
+        &__title
+            &_regular
+                font-size: 30px
+            &_bold
+                font-size: 40px
+        &__logo
+            right: 70px
+            height: 133px
+            img
+                height: 100%
+        &-img
+            &__man
+                top: 198px
+                height: 320px
+                width: 289px
+            &__box
+                top: 265px
+                right: 70px
+                height: 240px
+                width: 143px
+
+
+@media (max-width: 599px)
+    .header
+        &-menu
+            &__item
+                padding: 3px 9px 3px 9px
+
+@media (max-width: 575px)
+    .header
+        &-menu
+            margin-left: 30px
+            margin-right: 30px
+            max-width: 100%
+            display: flex
+            justify-content: space-between
+        &__title
+            margin-left: 30px
+        &__logo
+            top: 80px
+            right: 40px
+            height: 80px
+        &-img
+            &__man
+                left: 50%
+                transform: translateX(-45%)
+            &__box
+                display: none
+
+@media (max-width: 419px)
+    .header
+        height: 528px
+        &-menu
+            &__item
+                padding: 3px 6px 3px 6px
+                font-size: 16px
+        &__title
+            &_regular
+                font-size: 20px
+            &_bold
+                font-size: 25px
+        &__logo
+            top: 70px
+            height: 65px
+        &-img
+            &__man
+                top: 178px

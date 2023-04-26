@@ -1,0 +1,41 @@
+.catalog
+    &-banner
+        text-align: center
+        background-color: #03512A
+    &-container
+        padding: 10px 70px 50px 70px
+    &-table
+        margin-top: 30px
+        width: 100%
+        border: 1px solid $main-color_green
+        font-size: 16px
+        line-height: 22px
+        tr
+            border: 3px solid $main-color_green
+        td, th
+            border: 1px solid #000
+            padding: 5px
+            vertical-align: middle
+        &__row-name
+            text-align: left
+        &__col-name
+            font-weight: 700
+        &__value
+            text-align: center
+        &__col-numbers
+            text-align: center
+            color: $main-color_green
+        
+            
+@media (max-width: 991px)
+    .catalog
+        &-table
+            td, th
+                padding: 5px 0
+
+
+
+@media (max-width: 575px)
+    .catalog
+        &-container
+            padding: 25px 30px
